@@ -2,7 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* @font-face {
+  font-family: 'PPNeueMontreal';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../public/Fonts/PPNeueMontreal-Thin.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../public/Fonts/PPNeueMontreal-Book.otf') format('opentype');
+} */
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,7 +30,7 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
