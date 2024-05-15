@@ -40,7 +40,7 @@ const neueMontreal = localFont({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={neueMontreal.className}>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </main>
   );
 }

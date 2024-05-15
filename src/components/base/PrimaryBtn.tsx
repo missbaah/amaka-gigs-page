@@ -1,5 +1,3 @@
-import { Children } from "react";
-
 type ButtonProps = {
   width: string;
   children: React.ReactNode;
