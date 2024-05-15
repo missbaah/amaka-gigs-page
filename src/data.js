@@ -82,3 +82,7 @@ export const Socials = [
 export const FooterNavItems = [
     "About", "Copyright", "Creators", "Advertise", "Terms & Privacy", "Policy & Safety"
 ]
+
+export const FilterItems = [
+    "Earned amount", "Experience level", "Gig type", "Content type", "Location"
+]

@@ -29,7 +29,10 @@ const SideMenu = () => {
 
   const appBtns = DownloadApp.map((item) => {
     return (
-      <button className="w-[128px] h-10 border border-amaka-grey-border r-10 centered">
+      <button
+        key={item.name}
+        className="w-[128px] h-10 border border-amaka-grey-border r-10 centered"
+      >
         <Image src={item.icon} alt={item.name} />
       </button>
     );
@@ -37,14 +40,18 @@ const SideMenu = () => {
 
   const socials = Socials.map((item) => {
     return (
-      <button>
+      <button key={item.name}>
         <Image src={item.icon} alt={item.name} />
       </button>
     );
   });
 
   const footerNav = FooterNavItems.map((item) => {
-    return <li className="text-sm pb-1 pr-2">{item}</li>;
+    return (
+      <li key={item} className="text-sm pb-1 pr-2">
+        {item}
+      </li>
+    );
   });
 
   return (
