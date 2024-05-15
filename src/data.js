@@ -123,8 +123,8 @@ export const SearchResultsData = [
         title: "Content maker",
         location: "London, United Kingdom",
         rate: 35,
-        earned: 0,
-        timeCreated: "1 hour ago",
+        earned: 200,
+        timeCreated: "4 hours ago",
         experienceLevel: "Intermediate",
         brief: "Brief - Hi there! Lorem ipsum dolor sit amet consectetur. Et massa proin nibh nulla purus egestas magna imperdiet. Sagittis laoreet sodales eget ultrices mollis semper sed...",
         skills: [

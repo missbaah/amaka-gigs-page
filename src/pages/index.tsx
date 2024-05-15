@@ -1,5 +1,6 @@
 import FilterMenu from "@/components/FilterMenu";
 import NavBar from "@/components/NavBar";
+import ResultDetails from "@/components/ResultDetails";
 import SearchResults from "@/components/SearchResults";
 import SideMenu from "@/components/SideMenu";
 
@@ -12,9 +13,9 @@ export default function Home() {
         <section className="flex flex-col">
           <FilterMenu />
           <div className="border-b border-b-amaka-grey-border w-full"></div>
-          <section id="resultsArea">
+          <section id="resultsArea" className="flex pr-16">
             <SearchResults />
-            <section id="details"></section>
+            <ResultDetails />
           </section>
         </section>
       </section>

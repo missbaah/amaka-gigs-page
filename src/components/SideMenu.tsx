@@ -5,21 +5,20 @@ import brandmark from "../../public/icons/amaka-brandmark.svg";
 import Image from "next/image";
 
 const SideMenu = () => {
-  const [activeButtonIndex, setActiveButtonIndex] = useState<number | null>(
-    null
-  );
+  const [activeMenu, setActiveMenu] = useState("Gigs");
 
-  const handleButtonClick = (index: number) => {
-    setActiveButtonIndex(index);
+  const handleButtonClick = (name: string) => {
+    setActiveMenu(name);
   };
 
-  const sideMenu = SideMenuItems.map((item, index) => {
+  const sideMenu = SideMenuItems.map((item) => {
     return (
       <SideMenuBtn
+        key={item.name}
         handleClick={() => {
-          handleButtonClick(index);
+          handleButtonClick(item.name);
         }}
-        isActive={activeButtonIndex === index}
+        isActive={activeMenu === item.name}
       >
         <Image src={item.icon} alt={item.name} />
         {item.name}

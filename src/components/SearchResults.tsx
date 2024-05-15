@@ -1,18 +1,21 @@
 import { SearchResultsData } from "@/data";
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import ResultCard from "./base/ResultCard";
+import { ResultsContext } from "@/context/ResultsContext";
 
 const SearchResults = () => {
-  const [id, setId] = useState<number | null>(null);
+  const resultsContext = useContext(ResultsContext);
+
+  console.log(resultsContext?.id);
 
   const results = SearchResultsData.map((item) => {
     return (
       <ResultCard
-        isActive={item.id === id}
-        handleClick={() => {
-          setId(item.id);
-        }}
         key={item.id}
+        isActive={item.id === resultsContext?.id}
+        handleClick={() => {
+          resultsContext?.setResultId(item.id);
+        }}
         name={item.name}
         earned={item.earned}
         date={item.timeCreated}
