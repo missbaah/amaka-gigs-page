@@ -1,11 +1,17 @@
 import { SearchResultsData } from "@/data";
-import React from "react";
+import React, { useState } from "react";
 import ResultCard from "./base/ResultCard";
 
 const SearchResults = () => {
+  const [id, setId] = useState<number | null>(null);
+
   const results = SearchResultsData.map((item) => {
     return (
       <ResultCard
+        isActive={item.id === id}
+        handleClick={() => {
+          setId(item.id);
+        }}
         key={item.id}
         name={item.name}
         earned={item.earned}
@@ -19,7 +25,11 @@ const SearchResults = () => {
     );
   });
 
-  return <div className="w-[480px] mx-3">{results}</div>;
+  return (
+    <div className="w-[480px] border-r border-r-amaka-grey-border">
+      {results}
+    </div>
+  );
 };
 
 export default SearchResults;
