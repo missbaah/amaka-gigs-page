@@ -15,7 +15,7 @@ type ResultsContextProviderType = {
 export const ResultsContextProvider = ({
   children,
 }: ResultsContextProviderType) => {
-  const [id, setId] = useState(2);
+  const [id, setId] = useState(1);
 
   const setResultId = (resultID: number) => {
     setId(resultID);

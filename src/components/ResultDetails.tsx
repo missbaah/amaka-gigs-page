@@ -2,14 +2,16 @@ import React, { useContext } from "react";
 import DetailCard from "./base/DetailCard";
 import { ResultsContext } from "@/context/ResultsContext";
 import { SearchResultsData } from "@/data";
+import BriefCard from "./base/BriefCard";
 import AboutCard from "./base/AboutCard";
+import GigCard from "./base/GigCard";
 
 const ResultDetails = () => {
   const resultsContext = useContext(ResultsContext);
 
   const resultData =
     resultsContext && SearchResultsData[resultsContext.id]
-      ? SearchResultsData[resultsContext.id - 1]
+      ? SearchResultsData[resultsContext.id]
       : null;
 
   console.log(resultData);
@@ -26,7 +28,7 @@ const ResultDetails = () => {
         rate={resultData?.rate}
         earned={resultData?.earned}
       />
-      <AboutCard
+      <BriefCard
         intro={resultData?.about.intro}
         body={resultData?.about.body}
         conclusion={resultData?.about.conclusion}
@@ -34,6 +36,16 @@ const ResultDetails = () => {
         name={resultData?.name}
         skills={resultData?.about.skills}
       />
+      <AboutCard
+        imageSrc={resultData?.image}
+        name={resultData?.name}
+        subscribers={resultData?.subs}
+        posts={resultData?.posts}
+        userName={resultData?.userName}
+        brief={resultData?.brief}
+      >
+        <GigCard />
+      </AboutCard>
     </section>
   );
 };
