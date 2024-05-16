@@ -29,9 +29,7 @@ const SearchResults = () => {
   });
 
   return (
-    <div className="w-[480px] border-r border-r-amaka-grey-border">
-      {results}
-    </div>
+    <div className="w-1/2 border-r border-r-amaka-grey-border">{results}</div>
   );
 };
 

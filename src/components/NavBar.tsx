@@ -12,7 +12,9 @@ const NavBar = () => {
       <div className="flex gap-6 items-center">
         <Image src={Logo} alt="Amaka Logo" />
         <div className="flex gap-2">
-          <a className="underline text-amaka-grey">How AMAKA Works </a>
+          <a className="underline underline-offset-4 text-amaka-grey">
+            How AMAKA Works{" "}
+          </a>
           <Image src={maximize} alt="icon" />
         </div>
       </div>

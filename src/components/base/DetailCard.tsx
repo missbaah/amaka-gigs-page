@@ -5,6 +5,9 @@ import { SecondaryBtn } from "./SecondaryBtn";
 import Image from "next/image";
 import bookmark from "../../../public/icons/bookmark.svg";
 import more from "../../../public/icons/more-horizontal.svg";
+import briefcase from "../../../public/icons/briefcase-1.svg";
+import hours from "../../../public/icons/time.svg";
+import userCog from "../../../public/icons/user-cog.svg";
 
 type DetailCardProps = {
   name: string;
@@ -29,8 +32,8 @@ const DetailCard = (props: DetailCardProps) => {
     date = "Unknown",
   } = props;
   return (
-    <section className="w-full">
-      <section className="flex justify-between">
+    <section className="w-full flex flex-col gap-4">
+      <section className="flex justify-between items-start">
         <div className="flex flex-col gap-2">
           <div className="flex gap-3 items-center">
             <Image src={imageSrc} alt="image" className="rounded-full" />
@@ -46,6 +49,23 @@ const DetailCard = (props: DetailCardProps) => {
         <div className="flex gap-3">
           <Image src={bookmark} alt="bookmark-icon" />
           <Image src={more} alt="more-icon" />
+        </div>
+      </section>
+
+      <section className="flex flex-col gap-2 text-sm text-amaka-grey">
+        <div className="flex gap-3 items-center">
+          <Image src={briefcase} alt="icon" />
+          <span>{title}</span>
+        </div>
+        <div className="flex gap-3 items-center">
+          <Image src={hours} alt="icon" />
+          <span>
+            Hourly · ${rate} · ${earned} earned
+          </span>
+        </div>
+        <div className="flex gap-3 items-center">
+          <Image src={userCog} alt="icon" />
+          <span>Experience Level · {experienceLevel}</span>
         </div>
       </section>
 
