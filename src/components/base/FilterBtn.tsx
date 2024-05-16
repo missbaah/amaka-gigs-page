@@ -2,9 +2,9 @@ import React from "react";
 import arrowDown from "../../../public/icons/arrow-down.svg";
 import Image from "next/image";
 
-type FilterBtnProps = {
+interface FilterBtnProps {
   children: React.ReactNode;
-};
+}
 
 export const FilterBtn = (props: FilterBtnProps) => {
   return (

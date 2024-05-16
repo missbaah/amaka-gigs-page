@@ -4,7 +4,7 @@ import Plus from "../../public/icons/Plus.svg";
 import user from "../../public/icons/user.svg";
 import search from "../../public/icons/search.svg";
 import maximize from "../../public/icons/maximize.svg";
-import { PrimaryBtn } from "./base/PrimaryBtn";
+import { PrimaryBtn } from "./base/BaseBtns";
 
 const NavBar = () => {
   return (
@@ -27,7 +27,6 @@ const NavBar = () => {
             placeholder="Search AMAKA"
           />
         </div>
-
         <PrimaryBtn width="w-[120px]">
           <Image src={Plus} alt="icon" />
           Create

@@ -16,14 +16,7 @@ const SearchResults = () => {
         handleClick={() => {
           resultsContext?.setResultId(item.id);
         }}
-        name={item.name}
-        earned={item.earned}
-        date={item.timeCreated}
-        brief={item.brief}
-        title={item.title}
-        location={item.location}
-        rate={item.rate}
-        imageSrc={item.image}
+        data={item}
       />
     );
   });

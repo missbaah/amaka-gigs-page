@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-type SideMenuButtonProps = {
+interface SideMenuButtonProps {
   handleClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
   children: React.ReactNode;
   isActive: boolean;
-};
+}
 
 export const SideMenuBtn = (props: SideMenuButtonProps) => {
   const { isActive } = props;

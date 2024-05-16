@@ -1,8 +1,8 @@
 import React from "react";
 
-type StarProps = {
+interface StarProps {
   rating: number;
-};
+}
 
 const Star = (props: StarProps) => {
   return (
@@ -12,9 +12,7 @@ const Star = (props: StarProps) => {
           <span
             key={index}
             className={`text-base ${
-              props.rating >= star
-                ? "text-[#00875A]"
-                : "border border-[#00875A]"
+              props.rating >= star ? "text-[#00875A]" : "grey"
             }`}
           >
             {" "}
