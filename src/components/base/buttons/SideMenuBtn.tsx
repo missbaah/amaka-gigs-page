@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from "react";
 
 interface SideMenuButtonProps {
   handleClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
@@ -6,7 +6,7 @@ interface SideMenuButtonProps {
   isActive: boolean;
 }
 
-export const SideMenuBtn = (props: SideMenuButtonProps) => {
+const SideMenuBtn = (props: SideMenuButtonProps) => {
   const { isActive } = props;
   return (
     <button
@@ -19,3 +19,5 @@ export const SideMenuBtn = (props: SideMenuButtonProps) => {
     </button>
   );
 };
+
+export default SideMenuBtn;

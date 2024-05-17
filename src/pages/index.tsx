@@ -1,8 +1,8 @@
-import FilterMenu from "@/components/FilterMenu";
-import NavBar from "@/components/NavBar";
-import ResultDetails from "@/components/ResultDetails";
-import SearchResults from "@/components/SearchResults";
-import SideMenu from "@/components/SideMenu";
+import FilterMenu from "@/components/menu/FilterMenu";
+import NavBar from "@/components/menu/NavBar";
+import ResultDetails from "@/components/results/ResultDetails";
+import SearchResults from "@/components/results/SearchResults";
+import SideMenu from "@/components/menu/SideMenu";
 
 export default function Home() {
   return (

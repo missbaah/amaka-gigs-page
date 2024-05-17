@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import DetailCard from "./base/DetailCard";
+import DetailCard from "../base/cards/DetailCard";
 import { ResultsContext } from "@/context/ResultsContext";
 import { SearchResultsData } from "@/data";
-import BriefCard from "./base/BriefCard";
-import AboutCard from "./base/AboutCard";
+import BriefCard from "../base/cards/BriefCard";
+import AboutCard from "../base/cards/AboutCard";
 
 const ResultDetails = () => {
   const resultsContext = useContext(ResultsContext);

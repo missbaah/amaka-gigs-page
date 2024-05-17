@@ -1,10 +1,10 @@
 import React from "react";
-import { PrimaryBtn } from "./BaseBtns";
+import { PrimaryBtn } from "../buttons/BaseBtns";
 import Image from "next/image";
 import verify from "../../../public/icons/verify.svg";
 import { SearchResultsData } from "@/data";
 import GigCard from "./GigCard";
-import Wrapper from "./Wrapper";
+import Wrapper from "../misc/Wrapper";
 
 interface AboutCardProps {
   data?: SearchResultsData;

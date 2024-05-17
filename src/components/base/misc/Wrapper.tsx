@@ -1,5 +1,5 @@
 import React from "react";
-import { SecondaryBtn } from "./BaseBtns";
+import { SecondaryBtn } from "../buttons/BaseBtns";
 
 interface WrapperProps {
   children: React.ReactNode;

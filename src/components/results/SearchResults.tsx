@@ -1,6 +1,6 @@
 import { SearchResultsData } from "@/data";
 import React, { useContext } from "react";
-import ResultCard from "./base/ResultCard";
+import ResultCard from "../base/cards/ResultCard";
 import { ResultsContext } from "@/context/ResultsContext";
 
 const SearchResults = () => {

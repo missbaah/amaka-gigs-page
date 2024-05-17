@@ -1,5 +1,5 @@
 import React from "react";
-import { PrimaryBtn, SecondaryBtn } from "./BaseBtns";
+import { PrimaryBtn, SecondaryBtn } from "../buttons/BaseBtns";
 import Image from "next/image";
 import bookmark from "../../../public/icons/bookmark.svg";
 import more from "../../../public/icons/more-horizontal.svg";
