@@ -6,6 +6,7 @@ import { SearchResultsData } from "@/data";
 import GigCard from "./GigCard";
 import Wrapper from "../misc/Wrapper";
 import SkillsChip from "../misc/SkillsChip";
+import PostEngagements from "../misc/PostEngagements";
 
 interface AboutCardProps {
   data?: SearchResultsData;
@@ -68,6 +69,7 @@ const AboutCard = ({ data }: AboutCardProps) => {
       <Wrapper title="Feed" count={10}>
         {renderGigHistory}
       </Wrapper>
+      <PostEngagements />
       <section className="border-b border-x p-3 border-b-amaka-grey-border border-x-amaka-grey-border rounded-b-[10px] flex flex-col gap-3">
         <h3 className="text-base font-medium pt-3">Skills</h3>
         <div className="flex gap-3 flex-wrap">{renderSkills}</div>
