@@ -7,10 +7,14 @@ interface FeedCardProps {
 
 const FeedCard = ({ children }: FeedCardProps) => {
   return (
-    <section className="flex flex-col gap-4 py-4">
-      {children}
-      <PostEngagements />
-    </section>
+    <>
+      {" "}
+      <section className="flex flex-col gap-4 py-4">
+        {children}
+        <PostEngagements />
+      </section>
+      <div className="border-b border-b-amaka-grey-border w-full"></div>
+    </>
   );
 };
 
