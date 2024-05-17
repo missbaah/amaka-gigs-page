@@ -1,7 +1,7 @@
 import React from "react";
 import { PrimaryBtn } from "../buttons/BaseBtns";
 import Image from "next/image";
-import verify from "../../../public/icons/verify.svg";
+import verify from "public/icons/verify.svg";
 import { SearchResultsData } from "@/data";
 import GigCard from "./GigCard";
 import Wrapper from "../misc/Wrapper";

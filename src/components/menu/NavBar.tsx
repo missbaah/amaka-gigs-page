@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Logo from "../../public/assets/AmakaLogo.png";
-import Plus from "../../public/icons/Plus.svg";
-import user from "../../public/icons/user.svg";
-import search from "../../public/icons/search.svg";
-import maximize from "../../public/icons/maximize.svg";
+import Logo from "public/assets/AmakaLogo.png";
+import Plus from "public/icons/Plus.svg";
+import user from "public/icons/user.svg";
+import search from "public/icons/search.svg";
+import maximize from "public/icons/maximize.svg";
 import { PrimaryBtn } from "../base/buttons/BaseBtns";
 
 const NavBar = () => {

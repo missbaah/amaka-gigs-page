@@ -1,11 +1,11 @@
 import React from "react";
 import { PrimaryBtn, SecondaryBtn } from "../buttons/BaseBtns";
 import Image from "next/image";
-import bookmark from "../../../public/icons/bookmark.svg";
-import more from "../../../public/icons/more-horizontal.svg";
-import briefcase from "../../../public/icons/briefcase-1.svg";
-import hours from "../../../public/icons/time.svg";
-import userCog from "../../../public/icons/user-cog.svg";
+import bookmark from "public/icons/bookmark.svg";
+import more from "public/icons/more-horizontal.svg";
+import briefcase from "public/icons/briefcase-1.svg";
+import hours from "public/icons/time.svg";
+import userCog from "public/icons/user-cog.svg";
 import { SearchResultsData } from "@/data";
 
 interface DetailCardProps {

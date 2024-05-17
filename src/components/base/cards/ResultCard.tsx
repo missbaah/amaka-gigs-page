@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import remove from "../../../public/icons/remove.svg";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import remove from "public/icons/remove.svg";
 import { SearchResultsData } from "@/data";
 
 interface ResultCardProps {
