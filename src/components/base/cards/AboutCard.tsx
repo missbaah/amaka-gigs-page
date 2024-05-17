@@ -46,7 +46,7 @@ const AboutCard = ({ data }: AboutCardProps) => {
           <div className="flex justify-between items-center">
             <div className="text-sm font-medium flex gap-2 py-4">
               <Image
-                src={data?.image}
+                src={data?.image ?? "public/Avatar.svg"}
                 height={40}
                 width={40}
                 alt="avatar"

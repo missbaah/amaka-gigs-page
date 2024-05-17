@@ -18,7 +18,11 @@ const DetailCard = ({ data }: DetailCardProps) => {
       <section className="flex justify-between items-start">
         <div className="flex flex-col gap-2">
           <div className="flex gap-3 items-center">
-            <Image src={data?.image} alt="image" className="rounded-full" />
+            <Image
+              src={data?.image ?? "public/Avatar.svg"}
+              alt="image"
+              className="rounded-full"
+            />
             <span className="font-medium text-2xl">{data?.name}</span>
           </div>
           <div>

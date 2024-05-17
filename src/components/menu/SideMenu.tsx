@@ -65,11 +65,12 @@ const SideMenu = () => {
   return (
     <aside className="w-[280px] h-[820px] border-r border-b border-r-amaka-grey-border border-b-amaka-grey-border">
       <div className="grid gap-1 py-4 side-bar-padding">{sideMenu}</div>
-      <div className="flex gap-2 border-y border-y-amaka-grey-border side-bar-padding py-4">
-        <Image src={brandmark} alt="brand-mark" />
-        <p>AMAKA Editorial</p>
+      <div className="flex gap-2 border-y border-y-amaka-grey-border side-bar-padding py-2">
+        <SideMenuBtn handleClick={() => {}} isActive={false}>
+          <Image src={brandmark} alt="brand-mark" />
+          <p>AMAKA Editorial</p>
+        </SideMenuBtn>
       </div>
-
       <div
         id="app-btns"
         className="flex flex-col gap-[100px] justify-between pt-4 side-bar-padding w-full text-amaka-grey"

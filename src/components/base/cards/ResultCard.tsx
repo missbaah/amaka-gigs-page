@@ -19,7 +19,7 @@ const ResultCard = ({ data, handleClick, isActive }: ResultCardProps) => {
     >
       <div className="h-fit border-b border-b-amaka-grey-border flex gap-3 justify-center items-start py-4">
         <Image
-          src={data?.image}
+          src={data?.image ?? "public/Avatar.svg"}
           alt="image of creator"
           className="rounded-full"
         />
