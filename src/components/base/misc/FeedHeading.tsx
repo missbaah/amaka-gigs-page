@@ -5,7 +5,7 @@ interface FeedHeadingProps {
 }
 
 const FeedHeading = ({ children }: FeedHeadingProps) => {
-  return <h4 className="text-lg">{children}</h4>;
+  return <h4 className="text-lg font-canela">{children}</h4>;
 };
 
 export default FeedHeading;

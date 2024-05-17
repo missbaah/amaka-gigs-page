@@ -4,15 +4,15 @@
 
 
 @layer base {
-  .r-10 { @apply rounded-[10px]
+  .r-10 { @apply rounded-[10px];
   }
 
   .side-bar-padding {
-    @apply pl-[56px] pr-3
+    @apply pl-[56px] pr-3;
   }
 
   .centered{
-    @apply flex justify-center items-center
+    @apply flex justify-center items-center;
   }
 }
 

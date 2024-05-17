@@ -42,7 +42,7 @@ const WorkCard = ({ imageSrc, gigTitle, isVideo }: WorkCardProps) => {
           className="rounded-[8px]"
         />
       )}
-      <p>{gigTitle}</p>
+      <p className="font-canela">{gigTitle}</p>
     </div>
   );
 };

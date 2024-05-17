@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        canela: ['var(--font-canela)']
+      },
       colors:{
         'amaka-blue': '#2C36F0',
         'amaka-grey': '#808080',

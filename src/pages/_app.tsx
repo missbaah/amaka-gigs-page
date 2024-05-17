@@ -38,10 +38,16 @@ const neueMontreal = localFont({
   ],
 });
 
+const canela = localFont({
+  src: "../../public/Fonts/CanelaDeck-Regular-Trial.otf",
+  display: "swap",
+  variable: "--font-canela",
+});
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ResultsContextProvider>
-      <main className={neueMontreal.className}>
+      <main className={`${neueMontreal.className} ${canela.variable}`}>
         <Component {...pageProps} />
       </main>
     </ResultsContextProvider>
