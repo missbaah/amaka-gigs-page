@@ -13,7 +13,7 @@ export default function Home() {
         <section className="flex flex-col">
           <FilterMenu />
           <div className="border-b border-b-amaka-grey-border w-full"></div>
-          <section id="resultsArea" className="flex pr-16">
+          <section id="resultsArea" className="flex pr-14">
             <SearchResults />
             <ResultDetails />
           </section>
