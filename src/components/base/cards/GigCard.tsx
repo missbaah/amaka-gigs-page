@@ -15,7 +15,7 @@ interface GigCardProps {
   price: number;
   gigLocation: string;
   priceType: string;
-  work: { title: string; media: StaticImageData }[];
+  work: { title: string; media: StaticImageData; mediaType: boolean }[];
 }
 
 const GigCard = (props: GigCardProps) => {
@@ -54,6 +54,7 @@ const GigCard = (props: GigCardProps) => {
                 key={index}
                 gigTitle={item.title}
                 imageSrc={item.media}
+                isVideo={item.mediaType}
               />
             );
           })}

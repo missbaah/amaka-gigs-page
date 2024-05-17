@@ -24,6 +24,7 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 interface SideMenuItem {
   name: string;
   icon: string;
+  notification: number;
 }
 
 interface DownloadAppItem {
@@ -55,7 +56,7 @@ interface GigHistoryItem {
   gigLocation: string;
   startDate: string;
   endDate: string;
-  work: { title: string; media: StaticImageData }[];
+  work: { title: string; media: StaticImageData; mediaType: boolean }[];
 }
 
 export interface SearchResultsData {
@@ -81,34 +82,42 @@ export const SideMenuItems: SideMenuItem[] = [
   {
     name: "Home",
     icon: home,
+    notification: 0,
   },
   {
     name: "Events",
     icon: calendar,
+    notification: 0,
   },
   {
     name: "Gigs",
     icon: briefcase,
+    notification: 0,
   },
   {
     name: "Challenges",
     icon: users,
+    notification: 0,
   },
   {
     name: "Bookmarks",
     icon: bookmark,
+    notification: 0,
   },
   {
     name: "Notifications",
     icon: notification,
+    notification: 100,
   },
   {
     name: "Messages",
     icon: chatting,
+    notification: 100,
   },
   {
     name: "Profile",
     icon: user,
+    notification: 0,
   },
 ];
 
@@ -213,10 +222,12 @@ export const SearchResultsData: SearchResultsData[] = [
           {
             title: "Covering Nollywood: The Film Journalists Channeling",
             media: gig1,
+            mediaType: false,
           },
           {
             title: "Weaving Independence: Akwete Women's Fabric...",
             media: gig2,
+            mediaType: true,
           },
         ],
       },
@@ -234,14 +245,17 @@ export const SearchResultsData: SearchResultsData[] = [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
             media: gig3,
+            mediaType: false,
           },
           {
             title: "Lorem ipsum dolor sit amet consectetur",
             media: gig4,
+            mediaType: true,
           },
           {
             title: "Lorem ipsum dolor sit amet consectetur",
             media: gig5,
+            mediaType: false,
           },
         ],
       },
@@ -259,6 +273,7 @@ export const SearchResultsData: SearchResultsData[] = [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
             media: gig6,
+            mediaType: false,
           },
         ],
       },
@@ -316,10 +331,12 @@ export const SearchResultsData: SearchResultsData[] = [
           {
             title: "Covering Nollywood: The Film Journalists Channeling",
             media: gig1,
+            mediaType: false,
           },
           {
             title: "Weaving Independence: Akwete Women's Fabric...",
             media: gig2,
+            mediaType: true,
           },
         ],
       },
@@ -337,14 +354,17 @@ export const SearchResultsData: SearchResultsData[] = [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
             media: gig3,
+            mediaType: false,
           },
           {
             title: "Lorem ipsum dolor sit amet consectetur",
             media: gig4,
+            mediaType: true,
           },
           {
             title: "Lorem ipsum dolor sit amet consectetur",
             media: gig5,
+            mediaType: false,
           },
         ],
       },
@@ -362,6 +382,7 @@ export const SearchResultsData: SearchResultsData[] = [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
             media: gig6,
+            mediaType: true,
           },
         ],
       },
@@ -419,10 +440,12 @@ export const SearchResultsData: SearchResultsData[] = [
           {
             title: "Covering Nollywood: The Film Journalists Channeling",
             media: gig1,
+            mediaType: false,
           },
           {
             title: "Weaving Independence: Akwete Women's Fabric...",
             media: gig2,
+            mediaType: true,
           },
         ],
       },
@@ -440,14 +463,17 @@ export const SearchResultsData: SearchResultsData[] = [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
             media: gig3,
+            mediaType: false,
           },
           {
             title: "Lorem ipsum dolor sit amet consectetur",
             media: gig4,
+            mediaType: true,
           },
           {
             title: "Lorem ipsum dolor sit amet consectetur",
             media: gig5,
+            mediaType: false,
           },
         ],
       },
@@ -465,6 +491,7 @@ export const SearchResultsData: SearchResultsData[] = [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
             media: gig6,
+            mediaType: true,
           },
         ],
       },
@@ -522,10 +549,12 @@ export const SearchResultsData: SearchResultsData[] = [
           {
             title: "Covering Nollywood: The Film Journalists Channeling",
             media: gig1,
+            mediaType: false,
           },
           {
             title: "Weaving Independence: Akwete Women's Fabric...",
             media: gig2,
+            mediaType: true,
           },
         ],
       },
@@ -543,14 +572,17 @@ export const SearchResultsData: SearchResultsData[] = [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
             media: gig3,
+            mediaType: false,
           },
           {
             title: "Lorem ipsum dolor sit amet consectetur",
             media: gig4,
+            mediaType: true,
           },
           {
             title: "Lorem ipsum dolor sit amet consectetur",
             media: gig5,
+            mediaType: false,
           },
         ],
       },
@@ -568,6 +600,7 @@ export const SearchResultsData: SearchResultsData[] = [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
             media: gig6,
+            mediaType: true,
           },
         ],
       },

@@ -20,7 +20,16 @@ const SideMenu = () => {
         }}
         isActive={activeMenu === item.name}
       >
-        <Image src={item.icon} alt={item.name} />
+        {item.notification > 0 ? (
+          <div className="relative">
+            <Image src={item.icon} alt={item.name} />
+            <span className="px-1 bg-amaka-blue text-white rounded-full text-[10px] absolute top-0 left-1/4">
+              {item.notification}
+            </span>
+          </div>
+        ) : (
+          <Image src={item.icon} alt={item.name} />
+        )}
         {item.name}
       </SideMenuBtn>
     );
