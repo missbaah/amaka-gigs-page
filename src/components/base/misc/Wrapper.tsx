@@ -4,7 +4,7 @@ import { SecondaryBtn } from "../buttons/BaseBtns";
 interface WrapperProps {
   children: React.ReactNode;
   title: string;
-  count: number;
+  count?: number;
 }
 
 const Wrapper = (props: WrapperProps) => {
