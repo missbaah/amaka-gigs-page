@@ -1,11 +1,11 @@
 import { SearchResultsData } from "@/data";
-import React from "react";
+import React, { FC } from "react";
 
 interface BriefCardProps {
   data?: SearchResultsData;
 }
 
-const BriefCard = ({ data }: BriefCardProps) => {
+const BriefCard: FC<BriefCardProps> = ({ data }: BriefCardProps) => {
   return (
     <section className="flex flex-col gap-3">
       <h2 className="text-xl font-medium">Brief</h2>

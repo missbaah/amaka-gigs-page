@@ -20,6 +20,9 @@ import gig5 from "public/assets/image-5.png";
 import gig6 from "public/assets/image-6.png";
 import { StaticImageData } from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import Format1 from "./components/base/cards/feed/Format1";
+import Format2 from "./components/base/cards/feed/Format2";
+import Format3 from "./components/base/cards/feed/Format3";
 
 interface SideMenuItem {
   name: string;
@@ -76,6 +79,11 @@ export interface SearchResultsData {
   about: AboutSection;
   skills: string[];
   gigHistory: GigHistoryItem[];
+}
+
+export interface FeedFormats {
+  name: string;
+  component: React.ReactElement;
 }
 
 export const SideMenuItems: SideMenuItem[] = [
@@ -605,5 +613,20 @@ export const SearchResultsData: SearchResultsData[] = [
         ],
       },
     ],
+  },
+];
+
+export const FeedFormats: FeedFormats[] = [
+  {
+    name: "Format1",
+    component: <Format1 />,
+  },
+  {
+    name: "Format3",
+    component: <Format2 />,
+  },
+  {
+    name: "Format3",
+    component: <Format3 />,
   },
 ];

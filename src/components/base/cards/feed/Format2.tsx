@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 import FeedHeading from "../../misc/FeedHeading";
 import Image from "next/image";
 import image2 from "public/assets/feedImg2.png";
 import play from "public/icons/play.svg";
 
-const Format2 = () => {
+const Format2: FC = () => {
   return (
     <section className="flex flex-col gap-4">
       <FeedHeading>

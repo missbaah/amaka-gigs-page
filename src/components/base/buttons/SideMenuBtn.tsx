@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 
 interface SideMenuButtonProps {
   handleClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
@@ -6,7 +6,7 @@ interface SideMenuButtonProps {
   isActive: boolean;
 }
 
-const SideMenuBtn = (props: SideMenuButtonProps) => {
+const SideMenuBtn: FC<SideMenuButtonProps> = (props: SideMenuButtonProps) => {
   const { isActive } = props;
   return (
     <button

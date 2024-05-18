@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import { DownloadApp, FooterNavItems, SideMenuItems, Socials } from "@/data";
 import SideMenuBtn from "../base/buttons/SideMenuBtn";
 import brandmark from "public/icons/amaka-brandmark.svg";
 import Image from "next/image";
 
-const SideMenu = () => {
+const SideMenu: FC = () => {
   const [activeMenu, setActiveMenu] = useState("Gigs");
 
   const handleButtonClick = (name: string) => {

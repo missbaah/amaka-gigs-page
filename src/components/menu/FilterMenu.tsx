@@ -1,8 +1,8 @@
 import { FilterItems } from "@/data";
-import React from "react";
+import React, { FC } from "react";
 import FilterBtn from "../base/buttons/FilterBtn";
 
-const FilterMenu = () => {
+const FilterMenu: FC = () => {
   const filters = FilterItems.map((item) => {
     return <FilterBtn key={item}>{item}</FilterBtn>;
   });

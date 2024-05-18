@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 
 interface StarProps {
   rating: number;
 }
 
-const Star = (props: StarProps) => {
+const Star: FC<StarProps> = (props: StarProps) => {
   return (
     <div>
       {[1, 2, 3, 4, 5].map((star, index) => {

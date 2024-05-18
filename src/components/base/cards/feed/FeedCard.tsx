@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 import PostEngagements from "../../misc/PostEngagements";
 
 interface FeedCardProps {
   children: React.ReactNode;
 }
 
-const FeedCard = ({ children }: FeedCardProps) => {
+const FeedCard: FC<FeedCardProps> = ({ children }: FeedCardProps) => {
   return (
     <>
       {" "}

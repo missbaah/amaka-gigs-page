@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { SecondaryBtn } from "../buttons/BaseBtns";
 
 interface WrapperProps {
@@ -7,7 +7,7 @@ interface WrapperProps {
   count?: number;
 }
 
-const Wrapper = (props: WrapperProps) => {
+const Wrapper: FC<WrapperProps> = (props: WrapperProps) => {
   const { children, title, count } = props;
   return (
     <section className="border-b border-x p-3 border-b-amaka-grey-border border-x-amaka-grey-border">

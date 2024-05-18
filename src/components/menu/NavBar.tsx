@@ -5,8 +5,9 @@ import user from "public/icons/user.svg";
 import search from "public/icons/search.svg";
 import maximize from "public/icons/maximize.svg";
 import { PrimaryBtn } from "../base/buttons/BaseBtns";
+import { FC } from "react";
 
-const NavBar = () => {
+const NavBar: FC = () => {
   return (
     <nav className="h-20 flex px-6 items-center justify-between">
       <div className="flex gap-6 items-center">

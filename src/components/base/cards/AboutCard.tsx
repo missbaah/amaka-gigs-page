@@ -1,22 +1,18 @@
-import React from "react";
+import React, { FC } from "react";
 import { PrimaryBtn } from "../buttons/BaseBtns";
 import Image from "next/image";
 import verify from "public/icons/verify.svg";
-import { SearchResultsData } from "@/data";
+import { FeedFormats, SearchResultsData } from "@/data";
 import GigCard from "./GigCard";
 import Wrapper from "../misc/Wrapper";
 import SkillsChip from "../misc/SkillsChip";
-import PostEngagements from "../misc/PostEngagements";
 import FeedCard from "./feed/FeedCard";
-import Format1 from "./feed/Format1";
-import Format2 from "./feed/Format2";
-import Format3 from "./feed/Format3";
 
 interface AboutCardProps {
   data?: SearchResultsData;
 }
 
-const AboutCard = ({ data }: AboutCardProps) => {
+const AboutCard: FC<AboutCardProps> = ({ data }: AboutCardProps) => {
   const renderGigHistory = data?.gigHistory.map((history, index) => {
     return (
       <GigCard
@@ -32,6 +28,10 @@ const AboutCard = ({ data }: AboutCardProps) => {
         priceType={history.priceType}
       />
     );
+  });
+
+  const renderFeed = FeedFormats.map((format, index) => {
+    return <FeedCard key={index}>{format.component}</FeedCard>;
   });
 
   const renderSkills = data?.skills.map((skill, index) => {
@@ -71,15 +71,7 @@ const AboutCard = ({ data }: AboutCardProps) => {
         {renderGigHistory}
       </Wrapper>
       <Wrapper title="Feed" count={10}>
-        <FeedCard>
-          <Format1 />
-        </FeedCard>
-        <FeedCard>
-          <Format2 />
-        </FeedCard>
-        <FeedCard>
-          <Format3 />
-        </FeedCard>
+        {renderFeed}
       </Wrapper>
       <section className="border-b border-x p-3 border-b-amaka-grey-border border-x-amaka-grey-border rounded-b-[10px] flex flex-col gap-3">
         <h3 className="text-base font-medium pt-3">Skills</h3>

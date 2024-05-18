@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { PrimaryBtn, SecondaryBtn } from "../buttons/BaseBtns";
 import Image from "next/image";
 import bookmark from "public/icons/bookmark.svg";
@@ -12,7 +12,7 @@ interface DetailCardProps {
   data?: SearchResultsData;
 }
 
-const DetailCard = ({ data }: DetailCardProps) => {
+const DetailCard: FC<DetailCardProps> = ({ data }: DetailCardProps) => {
   return (
     <section className="w-full flex flex-col gap-4">
       <section className="flex justify-between items-start">

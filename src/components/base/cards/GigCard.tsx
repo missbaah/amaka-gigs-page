@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import Star from "../misc/Star";
 import {
   StaticImageData,
@@ -18,7 +18,7 @@ interface GigCardProps {
   work: { title: string; media: StaticImageData; mediaType: boolean }[];
 }
 
-const GigCard = (props: GigCardProps) => {
+const GigCard: FC<GigCardProps> = (props: GigCardProps) => {
   const {
     title,
     startDate,

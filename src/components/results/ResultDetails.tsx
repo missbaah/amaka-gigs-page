@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import React, { FC, useContext } from "react";
 import DetailCard from "../base/cards/DetailCard";
 import { ResultsContext } from "@/context/ResultsContext";
 import { SearchResultsData } from "@/data";
 import BriefCard from "../base/cards/BriefCard";
 import AboutCard from "../base/cards/AboutCard";
 
-const ResultDetails = () => {
+const ResultDetails: FC = () => {
   const resultsContext = useContext(ResultsContext);
 
   const resultData =

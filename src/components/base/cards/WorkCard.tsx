@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
-import React from "react";
+import React, { FC } from "react";
 import image2 from "public/assets/feedImg2.png";
 import play from "public/icons/play.svg";
 
@@ -10,7 +10,11 @@ interface WorkCardProps {
   isVideo: boolean;
 }
 
-const WorkCard = ({ imageSrc, gigTitle, isVideo }: WorkCardProps) => {
+const WorkCard: FC<WorkCardProps> = ({
+  imageSrc,
+  gigTitle,
+  isVideo,
+}: WorkCardProps) => {
   return (
     <div className="flex flex-col gap-2 text-sm w-[176px]">
       {isVideo ? (

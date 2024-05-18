@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 
 interface FeedHeadingProps {
   children: React.ReactNode;
 }
 
-const FeedHeading = ({ children }: FeedHeadingProps) => {
+const FeedHeading: FC<FeedHeadingProps> = ({ children }: FeedHeadingProps) => {
   return <h4 className="text-lg font-canela">{children}</h4>;
 };
 

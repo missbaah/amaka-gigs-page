@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { FC } from "react";
 import remove from "public/icons/remove.svg";
 import { SearchResultsData } from "@/data";
 
@@ -9,7 +9,11 @@ interface ResultCardProps {
   isActive: boolean;
 }
 
-const ResultCard = ({ data, handleClick, isActive }: ResultCardProps) => {
+const ResultCard: FC<ResultCardProps> = ({
+  data,
+  handleClick,
+  isActive,
+}: ResultCardProps) => {
   return (
     <section
       onClick={handleClick}

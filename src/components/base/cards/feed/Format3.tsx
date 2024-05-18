@@ -1,8 +1,8 @@
 import Image from "next/image";
-import React from "react";
+import React, { FC } from "react";
 import image3 from "public/assets/feedImg3.png";
 
-const Format3 = () => {
+const Format3: FC = () => {
   return (
     <section className="flex flex-col gap-3 border-x border-x-amaka-grey-border">
       <div className="px-3 text-sm flex flex-col gap-4">

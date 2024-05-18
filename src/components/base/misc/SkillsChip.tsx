@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 
 interface SkillsChipProps {
   children: React.ReactNode;
 }
 
-const SkillsChip = ({ children }: SkillsChipProps) => {
+const SkillsChip: FC<SkillsChipProps> = ({ children }: SkillsChipProps) => {
   return (
     <span className="text-xs font-medium bg-amaka-grey-highlight py-2 px-3 rounded-full uppercase">
       {children}

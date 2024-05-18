@@ -1,9 +1,9 @@
 import { SearchResultsData } from "@/data";
-import React, { useContext } from "react";
+import React, { FC, useContext } from "react";
 import ResultCard from "../base/cards/ResultCard";
 import { ResultsContext } from "@/context/ResultsContext";
 
-const SearchResults = () => {
+const SearchResults: FC = () => {
   const resultsContext = useContext(ResultsContext);
 
   console.log(resultsContext?.id);

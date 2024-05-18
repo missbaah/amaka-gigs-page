@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 import Image1 from "public/assets/image-1.png";
 import Image from "next/image";
 import SkillsChip from "../../misc/SkillsChip";
 import FeedHeading from "../../misc/FeedHeading";
 
-const Format1 = () => {
+const Format1: FC = () => {
   const tags = ["Design", "Lagos", "Architecture"];
 
   const renderTags = tags.map((tag, index) => {
